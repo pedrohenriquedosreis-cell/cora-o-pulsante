@@ -14,32 +14,32 @@
     animation: pulsar 1s ease-in infinite;
  }
  .pulsante::after{
-    background: blue;
+    background: red;
     content: '';
     border-radius: 50%;
     position: absolute;
     top: -50%; 
-    left: o;
+    left: 0;
     height: 100px;
     width: 100px;
  }
- .pulsante::after{
-    background: green;
+ .pulsante::before{
+    background: red;
     content: '';
     border-radius: 50%;
     position: absolute;
     top: 0%; 
-    right: -50%px;
+    right: -50%;
     height: 100px;
     width: 100px;
 }
 @keyframes pulsar {
     0%{
-        transform: rotate(-45deg); scale: (1);
+        transform: rotate(-45deg) scale(1);
     }
     50%{
-        transform: rotate(-45deg); scale: (3);
+        transform: rotate(-45deg) scale(3);
     }
-    100%{ transform: rotate(-45deg); scale: (1);
+    100%{ transform: rotate(-45deg) scale(1);
     }
 }
